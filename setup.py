@@ -32,7 +32,6 @@ if __name__ == "__main__":
         "pytest": ["pytest"],
         "pytest-cov": ["pytest-cov"],
         "pytest-mock": ["pytest-mock"],
-        "vivarium_testing_utils": ["vivarium_testing_utils"],
         # formatting and linting
         "black": ["black==22.3.0"],
         "isort": ["isort==5.13.2"],
