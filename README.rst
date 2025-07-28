@@ -1,46 +1,32 @@
-========
-Vivarium
-========
+=====================
+Vivarium Dependencies
+=====================
 
-.. image:: https://badge.fury.io/py/vivarium.svg
-    :target: https://badge.fury.io/py/vivarium
+Vivarium Dependencies contains dependency constraings commonly used in Simulation 
+Science repositories.
 
-.. image:: https://github.com/ihmeuw/vivarium/actions/workflows/build.yml/badge.svg?branch=main
-    :target: https://github.com/ihmeuw/vivarium
-    :alt: Latest Version
+Usage
+=====
 
-.. image:: https://readthedocs.org/projects/vivarium/badge/?version=latest
-    :target: https://vivarium.readthedocs.io/en/latest/?badge=latest
-    :alt: Latest Docs
+A downstream repository can use Vivarium Dependencies to define a setup dependency
+by including the desired constraint(s) in the `install_requires` dictionary of its setup.py::
 
-.. image:: https://zenodo.org/badge/96817805.svg
-   :target: https://zenodo.org/badge/latestdoi/96817805
+  # setup.py
+  ...
+  if __name__ == "__main__":
+    ...
+    install_requirements = [
+      "vivarium_build_utils[layered_config_tree]"
+    ]
+    ...
+  ...
 
-Vivarium is a simulation framework written using standard scientific Python
-tools.
+Installation
+============
 
-**Vivarium requires Python 3.8-3.11 to run**
+You can build ``vivarium_dependencies`` from source with::
 
-You can install ``vivarium`` from PyPI with pip:
-
-  ``> pip install vivarium``
-
-or build it from source with
-
-  ``> git clone https://github.com/ihmeuw/vivarium.git``
-
-  ``> cd vivarium``
-
-  ``> conda create -n ENVIRONMENT_NAME python=3.11``
-
-  ``> pip install -e .[dev]``
-
-This will make the ``vivarium`` library available to python and install a
-command-line executable called ``simulate`` that you can use to verify your
-installation with
-
-  ``> simulate test``
-
-
-`Check out the docs! <https://vivarium.readthedocs.io/en/latest/>`_
--------------------------------------------------------------------
+  $ git clone https://github.com/ihmeuw/vivarium_dependencies.git
+  $ cd vivarium_dependencies
+  $ conda create -n ENVIRONMENT_NAME
+  $ pip install -e .
