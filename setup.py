@@ -43,7 +43,7 @@ if __name__ == "__main__":
         "ipython": ["IPython"],
         "matplotlib": ["matplotlib"],
         # convenience sets
-        "linting": [
+        "formatting": [
             "vivarium_dependencies[black]",
             "vivarium_dependencies[isort]",
         ],
