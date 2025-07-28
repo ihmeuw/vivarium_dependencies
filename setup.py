@@ -40,16 +40,20 @@ if __name__ == "__main__":
         "sphinx-rtd-theme": ["sphinx-rtd-theme"],
         "sphinx-autodoc-typehints": ["sphinx-autodoc-typehints"],
         "sphinx-click": ["sphinx-click"],
-        "ipython": ["IPython"],
-        "matplotlib": ["matplotlib"],
         # convenience sets
         "formatting": [
             "vivarium_dependencies[black]",
             "vivarium_dependencies[isort]",
         ],
-        "plotting": [
-            "vivarium_dependencies[ipython]",
-            "vivarium_dependencies[matplotlib]",
+        "interactive": [
+            "vivarium_dependencies[scipy]",
+            "jupyter",
+            "ipython",
+            "ipywidgets",
+            "matplotlib",
+            "seaborn",
+            "get_draws",
+            "db_queries",
         ],
     }
 
