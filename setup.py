@@ -1,11 +1,6 @@
-import json
-import sys
-
-from packaging.version import parse
-
 from pathlib import Path
 
-from setuptools import find_packages, setup
+from setuptools import setup
 
 if __name__ == "__main__":
     base_dir = Path(__file__).parent
@@ -23,13 +18,16 @@ if __name__ == "__main__":
     # e.g. vivarium_dependencies[numpy,pandas]>=1.2.0,<2.0.0
     extras_require = {
         "numpy": ["numpy<2.0.0"],
-        "pandas": ["pandas"],
-        "pyyaml": ["pyyaml>=5.1"],
+        "pandas": ["pandas", "pandas-stubs<=2.2.3.250308",],
+        "pyyaml": ["pyyaml>=5.1", "types-PyYAML",],
         "scipy": ["scipy"],
         "click": ["click"],
         "tables": ["tables"],
         "loguru": ["loguru"],
         "pyarrow": ["pyarrow"],
+        "networkx": ["networkx", "networkx-stubs",],
+        "requests": ["requests", "types-requests",],
+        "docutils": ["docutils", "types-docutils",],
         # testing
         "pytest": ["pytest"],
         "pytest-cov": ["pytest-cov"],
