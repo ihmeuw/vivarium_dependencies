@@ -18,7 +18,8 @@ if __name__ == "__main__":
     # e.g. vivarium_dependencies[numpy,pandas]>=1.2.0,<2.0.0
     extras_require = {
         "numpy": ["numpy<2.0.0"],
-        "pandas": ["pandas", "pandas-stubs<=2.2.3.250308",],
+        "pandas-stubs": ["pandas-stubs<=2.2.3.250308"],
+        "pandas": ["pandas", "vivarium_dependencies[pandas-stubs]",],
         "pyyaml": ["pyyaml>=5.1", "types-PyYAML",],
         "scipy": ["scipy"],
         "click": ["click"],
@@ -29,9 +30,7 @@ if __name__ == "__main__":
         "requests": ["requests", "types-requests",],
         "docutils": ["docutils", "types-docutils",],
         # testing
-        "pytest": ["pytest"],
-        "pytest-cov": ["pytest-cov"],
-        "pytest-mock": ["pytest-mock"],
+        "pytest": ["pytest", "pytest-cov", "pytest-mock"],
         # formatting and linting
         "black": ["black==22.3.0"],
         "isort": ["isort==5.13.2"],
@@ -44,18 +43,13 @@ if __name__ == "__main__":
         "ipython": ["IPython"],
         "matplotlib": ["matplotlib"],
         # convenience sets
-        "testing": [
-            "vivarium_build_utils[pytest]",
-            "vivarium_build_utils[pytest-cov]",
-            "vivarium_build_utils[pytest-mock]",
-        ],
         "linting": [
-            "vivarium_build_utils[black]",
-            "vivarium_build_utils[isort]",
+            "vivarium_dependencies[black]",
+            "vivarium_dependencies[isort]",
         ],
         "plotting": [
-            "vivarium_build_utils[ipython]",
-            "vivarium_build_utils[matplotlib]",
+            "vivarium_dependencies[ipython]",
+            "vivarium_dependencies[matplotlib]",
         ],
     }
 
