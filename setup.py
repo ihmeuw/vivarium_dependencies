@@ -55,6 +55,10 @@ if __name__ == "__main__":
         "sphinx-rtd-theme": ["sphinx-rtd-theme"],
         "sphinx-autodoc-typehints": ["sphinx-autodoc-typehints"],
         "sphinx-click": ["sphinx-click"],
+        # gbd
+        "db_queries": ["db_queries>=31.0.4,< 32.0.0"],
+        "db_tools": ["db_tools>=1.0.2,<2.0.0"],
+        "get_draws": ["get_draws>=5.1.4,<6.0.0"],
         # convenience sets
         "formatting": [
             "vivarium_dependencies[black]",
@@ -67,8 +71,11 @@ if __name__ == "__main__":
             "ipywidgets",
             "matplotlib",
             "seaborn",
-            "get_draws",
-            "db_queries",
+        ],
+        "gbd": [
+            "vivarium_dependencies[db_queries]",
+            "vivarium_dependencies[db_tools]",
+            "vivarium_dependencies[get_draws]",
         ],
     }
 
