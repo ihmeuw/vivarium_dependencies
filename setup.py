@@ -19,16 +19,31 @@ if __name__ == "__main__":
     extras_require = {
         "numpy": ["numpy<2.0.0"],
         "pandas-stubs": ["pandas-stubs<=2.2.3.250308"],
-        "pandas": ["pandas", "vivarium_dependencies[pandas-stubs]",],
-        "pyyaml": ["pyyaml>=5.1", "types-PyYAML",],
+        "pandas": [
+            "pandas",
+            "vivarium_dependencies[pandas-stubs]",
+        ],
+        "pyyaml": [
+            "pyyaml>=5.1",
+            "types-PyYAML",
+        ],
         "scipy": ["scipy"],
         "click": ["click"],
         "tables": ["tables"],
         "loguru": ["loguru"],
         "pyarrow": ["pyarrow"],
-        "networkx": ["networkx", "networkx-stubs",],
-        "requests": ["requests", "types-requests",],
-        "docutils": ["docutils", "types-docutils",],
+        "networkx": [
+            "networkx",
+            "networkx-stubs",
+        ],
+        "requests": [
+            "requests",
+            "types-requests",
+        ],
+        "docutils": [
+            "docutils",
+            "types-docutils",
+        ],
         # testing
         "pytest": ["pytest", "pytest-cov", "pytest-mock"],
         # formatting and linting
@@ -83,5 +98,10 @@ if __name__ == "__main__":
         ],
         extras_require=extras_require,
         zip_safe=False,
+        use_scm_version={
+            "write_to": "_version.py",
+            "write_to_template": '__version__ = "{version}"\n',
+            "tag_regex": r"^(?P<prefix>v)?(?P<version>[^\+]+)(?P<suffix>.*)?$",
+        },
         setup_requires=setup_requires,
     )
