@@ -60,7 +60,7 @@ if __name__ == "__main__":
         "db_tools": ["db_tools>=1.0.2,<2.0.0"],
         "get_draws": ["get_draws>=5.1.4,<6.0.0"],
         # convenience sets
-        "formatting": [
+        "format": [
             "vivarium_dependencies[black]",
             "vivarium_dependencies[isort]",
         ],
