@@ -2,7 +2,7 @@
 Vivarium Dependencies
 =====================
 
-Vivarium Dependencies contains dependency constraings commonly used in Simulation 
+Vivarium Dependencies contains dependency constraints commonly used in Simulation 
 Science repositories.
 
 Usage
