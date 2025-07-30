@@ -52,7 +52,7 @@ if __name__ == "__main__":
         "mypy": ["mypy"],
         # docs
         "sphinx": [
-            "sphinx<8.0.0",
+            "sphinx",
             "sphinx-autodoc-typehints",
             "sphinx-rtd-theme",
         ],
