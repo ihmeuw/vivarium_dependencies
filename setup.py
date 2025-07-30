@@ -51,9 +51,11 @@ if __name__ == "__main__":
         "isort": ["isort==5.13.2"],
         "mypy": ["mypy"],
         # docs
-        "sphinx": ["sphinx>=4.0,<8.0.0"],
-        "sphinx-rtd-theme": ["sphinx-rtd-theme"],
-        "sphinx-autodoc-typehints": ["sphinx-autodoc-typehints"],
+        "sphinx": [
+            "sphinx<8.0.0",
+            "sphinx-autodoc-typehints",
+            "sphinx-rtd-theme",
+        ],
         "sphinx-click": ["sphinx-click"],
         # gbd
         "db_queries": ["db_queries>=31.0.4,< 32.0.0"],
