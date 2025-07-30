@@ -18,10 +18,9 @@ if __name__ == "__main__":
     # e.g. vivarium_dependencies[numpy,pandas]>=1.2.0,<2.0.0
     extras_require = {
         "numpy": ["numpy<2.0.0"],
-        "pandas-stubs": ["pandas-stubs<=2.2.3.250308"],
         "pandas": [
             "pandas",
-            "vivarium_dependencies[pandas-stubs]",
+            "pandas-stubs<=2.2.3.250308",
         ],
         "pyyaml": [
             "pyyaml>=5.1",
