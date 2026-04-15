@@ -1,4 +1,8 @@
-**1.0.7 - 04/14/26**
+**2.0.0 - 04/15/26**
+
+ - Add vivarium_build_utils pin
+
+**1.0.7 - 04/14/26** (yanked)
  
  - Add vbu pin
 

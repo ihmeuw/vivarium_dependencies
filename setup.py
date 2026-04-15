@@ -52,7 +52,7 @@ if __name__ == "__main__":
         ],
         "matplotlib": ["matplotlib"],
         "vivarium_build_utils": [
-            "vivarium_build_utils>=3.0.1,<4.0.0",
+            "vivarium_build_utils>=3.0.2,<4.0.0",
         ],
         # testing
         "pytest": ["pytest", "pytest-cov", "pytest-mock"],
