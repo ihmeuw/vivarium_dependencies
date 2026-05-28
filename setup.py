@@ -62,13 +62,13 @@ if __name__ == "__main__":
         "mypy": ["mypy"],
         # docs
         "sphinx": [
-            "sphinx<9.0.0",
+            "sphinx>=4.5.0,<9.0.0",
             "sphinx-autodoc-typehints",
             "sphinx-rtd-theme>=2.0.0",
         ],
         "sphinx-click": ["sphinx-click"],
         # gbd
-        "db_queries": ["db_queries>=31.0.4,< 32.0.0"],
+        "db_queries": ["db_queries>=31.0.4,<32.0.0"],
         "db_tools": ["db_tools>=1.0.2,<2.0.0"],
         "get_draws": ["get_draws>=5.1.4,<6.0.0"],
         # convenience sets
