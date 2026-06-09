@@ -34,7 +34,7 @@ if __name__ == "__main__":
         "pyarrow": ["pyarrow"],
         "networkx": [
             "networkx",
-            "types-networkx",
+            "networkx-stubs",
         ],
         "requests": [
             "requests",
