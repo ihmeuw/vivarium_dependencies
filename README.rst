@@ -14,8 +14,9 @@ What changed
   ``ihmeuw/vivarium-suite`` (under ``libs/dependencies/``)
 
 There are no downstream changes. This package is a code-less metapackage that
-exposes only `extras`_; the PyPI distribution name (``vivarium-dependencies``)
-and every extras reference in downstream ``pyproject.toml`` files are unchanged.
+exposes only `extras <https://peps.python.org/pep-0508/#extras>`_; the PyPI
+distribution name (``vivarium-dependencies``) and every extras reference in
+downstream ``pyproject.toml`` files are unchanged.
 
 Original package overview
 =========================
