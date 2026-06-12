@@ -1,3 +1,7 @@
+**1.0.0 - 06/11/26**
+
+ - Add notes about this repository being archived to the README.
+
 **1.0.8 - 06/09/26**
  
  - Replace networkx-stubs with types-networkx in the networkx extra
