@@ -2,6 +2,25 @@
 Vivarium Dependencies
 =====================
 
+**NOTE: This repository has been archived.**
+
+The ``vivarium_dependencies`` package has been renamed and migrated into the
+`vivarium-suite monorepo <https://github.com/ihmeuw/vivarium-suite>`_.
+
+What changed
+------------
+
+- **Source:** ``ihmeuw/vivarium_dependencies`` (archived) ->
+  ``ihmeuw/vivarium-suite`` (under ``libs/dependencies/``)
+
+There are no downstream changes. This package is a code-less metapackage that
+exposes only `extras`_; the PyPI distribution name (``vivarium-dependencies``)
+and every extras reference in downstream ``pyproject.toml`` files are unchanged.
+
+Original package overview
+=========================
+
+
 Vivarium Dependencies contains dependency constraints commonly used in Simulation 
 Science repositories.
 
