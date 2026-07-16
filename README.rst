@@ -2,21 +2,25 @@
 Vivarium Dependencies
 =====================
 
-**NOTE: This repository has been archived.**
+**NOTE: This repository is archived and will receive no further updates.**
 
-The ``vivarium_dependencies`` package has been renamed and migrated into the
+The ``vivarium_dependencies`` package's development has migrated into the
 `vivarium-suite monorepo <https://github.com/ihmeuw/vivarium-suite>`_.
 
 What changed
 ------------
 
+- **PyPI distribution:** ``vivarium-dependencies`` (unchanged - same name)
 - **Source:** ``ihmeuw/vivarium_dependencies`` (archived) ->
   ``ihmeuw/vivarium-suite`` (under ``libs/dependencies/``)
 
-There are no downstream changes. This package is a code-less metapackage that
-exposes only `extras <https://peps.python.org/pep-0508/#extras>`_; the PyPI
-distribution name (``vivarium-dependencies``) and every extras reference in
-downstream ``pyproject.toml`` files are unchanged.
+This repository's final release was ``v1.0.9``. The ``vivarium-dependencies``
+distribution name is now published from the monorepo starting at ``v1.1.0``, so
+downstream ``pyproject.toml`` files pin unchanged and ``pip install`` resolves
+to the monorepo release. There are no import-path changes since this is a
+code-less metapackage that exposes only
+`extras <https://peps.python.org/pep-0508/#extras>`_. This repository is
+frozen and will not receive updates.
 
 Original package overview
 =========================

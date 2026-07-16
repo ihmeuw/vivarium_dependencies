@@ -1,6 +1,7 @@
 **1.0.9 - 06/12/26**
 
- - Add notes about this repository being archived to the README.
+ - Adds an archive banner to the README pointing at the ``vivarium-suite``
+   monorepo (``libs/dependencies/``, published as ``vivarium-dependencies``).
 
 **1.0.8 - 06/09/26**
  
